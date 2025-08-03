@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Termo de Garantia Estendida - Nobre Automotive</title>
+
+</head>
+<style>
+  .section {
+    margin-bottom: 12px;
+    display: block;
+    page-break-inside: auto;
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+
+  .subtexto-recuado {
+    margin-left: 20px;
+    page-break-inside: auto;
+  }
+
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section,
+    .subtexto-recuado {
+      page-break-inside: auto !important;
+      break-inside: auto !important;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 2cm;
+    color: #000000;
+    background-color: white;
+    font-size: 11pt;
+  }
+
+  .strong span {
+    color: red;
+  }
+
+  .topo-imagens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .img-logo {
+    max-height: 100px;
+  }
+
+  .img-selo {
+    max-height: 120px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 12pt;
+    margin-top: 10px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3px;
+  }
+
+  h3 {
+    font-size: 11pt;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+
+  .info-block {
+    background-color: #f2f2f2;
+    border-left: 4px solid #003366;
+    padding: 10px 15px;
+    margin-top: 10px;
+    page-break-inside: auto;
+  }
+
+  .assinatura {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .assinatura div {
+    width: 45%;
+    margin-top: 30px;
+  }
+
+  .assinatura p {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 11pt;
+  }
+
+  .footer {
+    font-size: 11pt;
+    margin-top: 20px;
+  }
+
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  strong span {
+    color: red;
+  }
+
+  @page {
+    size: A4;
+    margin: 0.8cm;
+  }
+</style>
+
+<body>
+
+  <h1><u>TERMO DE GARANTIA ESTENDIDA<br/>NOBRE AUTOMOTIVE</u></h1>
+  <br>
+
+  <div class="section">
+    <h2><u>EM CASO DE OCORRÊNCIAS MECÂNICAS URGENTES OCASIONADAS POR PANE ELÉTRICA/MECÂNICA OU PROBLEMAS NO FUNCIONAMENTO
+      DO VEÍCULO, SIGA AS SEGUINTES ORIENTAÇÕES:</u>
+    </h2>
+    <div class="info-block">
+      <strong>
+        <p>Pare imediatamente o veículo;<br>
+          Desligue o motor:<br>
+          Entre em contato com a central de urgência CARE ASSISTÊNCIA 24 HORAS pelos telefones:
+          0800 940 2121 ou 0800 940 2122.<br>
+          Em até 48horas úteis após o chamado, entre em contato com a NOBRE AUTOMOTIVE e <u>informe o ocorrido</u>:<br>
+          WhatsApp: (48) 3242-1742<br>
+          E-mail: <u>assistencia@nobreautomotive.com.br</u><br>
+          Telefone:(48) 3242-1742<br>
+          Horário de Atendimento NOBRE AUTOMOTIVE: segunda à sexta-feira das 08h às 12h e das 13:30h às 18h</P>
+      </strong>
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <p>
+      <strong>A NOBRE AUTOMOTIVE</strong>, empresa referenciada na manutenção veicular, garante, de forma extensiva, o
+      correto
+      funcionamento do veículo automotor, objeto do presente termo, durante o prazo de 90 (noventa) dias da garantia
+      legal pelo CDC e mais 9 (nove) meses da estendida.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2><u>1 - Condições Gerais do Serviço</u></h2>
+    <p>Pelo presente Termo de Garantia Estendida, a <strong>NOBRE AUTOMOTIVE</strong> compromete-se a prestar ao
+      <strong>PROPRIETÁRIO</strong> do veículo,
+      Serviços de Garantia Veicular exclusiva aos itens mecânicos e elétricos / eletrônicos descritos neste Termo,
+      mediante manutenção preventiva e corretiva, de caráter profissional, no veículo:
+    </p>
+
+    <p><strong>VEÍCULO</strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>MARCA:</strong> {{marca}} . <strong>MODELO:</strong> {{modelo}}.<br>
+        <strong>COMBUSTÍVEL:</strong>{{combustivel}}. <strong><br>
+          ANO:</strong> {{anoFabricacao}}. <strong>ANO DO MODELO:</strong> {{anoModelo}}. <strong>PLACA:</strong>
+        {{placa}}. <strong>RENAVAM Nº:</strong> {{renavam}}. <br> <strong>CHASSI:</strong> {{chassi}}.
+        <strong>COR:</strong> {{cor}}. <strong>N° MOTOR:</strong> {{numeroMotor}}.<br>
+        <strong>VERSÃO MODELO:</strong> {{versaoCarro}}.<br>
+        <strong>KM DE ENTREGA:</strong> {{kmSaida}}KM. <strong><br>
+          DATA PROX TROCA DE ÓLEO OU REVISÃO:</strong> {{dataProxRev}} OU {{kmProxRev}}KM.
+      </p>
+    </div>
+    <p><strong>DADOS DO CONTRATANTE:
+      </strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>PROPRIETÁRIO:</strong> {{nomeCliente}}. <strong>CPF/CNPJ:</strong> {{cpfCnpj}}.<br>
+        <strong>DATA DE NASCIMENTO:</strong> {{dataNasc}}. <strong>ENDEREÇO:</strong>
+        {{endereco}}, {{numero}}.<br> <strong>BAIRRO:</strong> {{bairro}}. <strong>CIDADE:</strong> {{cidade}}.
+        <strong>UF:</strong>
+        {{estado}}. <strong>CEP:</strong> {{cep}}.
+      </p>
+    </div>
+    <p><strong>CONTATOS:
+      </strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>TELEFONE:</strong> {{telefone}}. <strong>EMAIL:</strong> {{emailCliente}}.</p>
+    </div>
+    <p><strong>PLANO CONTRATADO: </strong>{{plano}}. <strong>FORMA DE PAGAMENTO: </strong>{{pagm}}</p>
+    <p><strong>VALOR MAXIMO DE REPARO: R$ </strong> {{vmr}}</p>
+  </div>
+  <div>
+    <!--<p><strong>NA CONDIÇÃO DE EMPRESA QUALIFICADA, EM CARÁTER DE EXCLUSIVIDADE, EXECUTANDO OS SERVIÇOS NAS
+        DEPENDÊNCIAS DA EMPRESA NOBRE AUTOMOTIVE, QUAL SEJA: RUA VEREADOR OSVALDO DE OLIVEIRA, Nº 3993, CENTRO,
+        PALHOÇA/SC, CEP: 88131-200.</strong></p>-->
+
+    <p><strong>PARÁGRAFO PRIMEIRO:</strong> Optando o proprietário do veículo pela garantia estendida por período total
+      de 9 (nove) meses, esta será condicionada a realização de revisões periódicas descritas pelo fabricante do
+      veículo, desde que efetuadas exclusivamente pela <strong>NOBRE AUTOMOTIVE OU EM SUA PARCEIRA PRÉ AUTORIZADA PELA
+        NOBRE,
+        PREFERENCIALMENTE BOSCH CAR SERVICE </strong> e em conformidade com os termos descritos no <u>TERMO DE GARANTIA
+      ESTENDIDA –
+      NOBRE AUTOMOTIVE</u></p>
+
+    <p><strong>PARÁGRAFO SEGUNDO:</strong> A garantia estendida de 9 (nove) meses somente será válida e aplicada
+      a
+      veículos com no máximo 09 (nove) anos da data de fabricação e com no máximo 180.000 (cento oitenta) mil
+      quilômetros rodados.</p>
+
+    <p><strong>PARÁGRAFO TERCEIRO:</strong> As peças de desgaste normais de uso, estão exclusas do período de
+      garantia, sendo estas limitadas à defeitos de fabricação, aplicando-se as condições específicas.</p>
+
+    <p><strong>PARÁGRAFO QUARTO:</strong> Na hipótese de qualquer reclamação concernente à garantia ou prestação de
+      serviços, o <strong>PROPRIETÁRIO</strong>
+      do veículo deverá comunicar imediatamente o departamento de Assistência Técnica da <strong>NOBRE
+        AUTOMOTIVE</strong>
+      <strong>(exclusivamente por e-mail: <a
+          href="mailto:assistencia@nobreautomotive.com.br">assistencia@nobreautomotive.com.br</a>)</strong>,
+        apresentando-lhe
+        as irregularidades ocorridas.
+    </p>
+
+    <p><strong>PARÁGRAFO QUINTO:</strong> A NOBRE AUTOMOTIVE não aceitará qualquer débito relativo a serviços
+      ou peças substituídas por terceiros, sem sua prévia autorização por escrito.</p>
+
+    <p><strong>PARÁGRAFO SEXTO:</strong> Toda manutenção que for autorizada a ser feita fora da NOBRE AUTOMOTIVE,
+      deve ser realizada dentro de uma oficina credenciada Bosch Car Service ou outra oficina indicada por ela.</p>
+
+    <p><strong>PARÁGRAFO SÉTIMO: <u>Em caso de ocorrências mecânicas urgentes ocasionadas por pane
+      elétrica/mecânica e/ou problemas no funcionamento do veículo, deverá ser comunicado à NOBRE AUTOMOTIVE no
+      prazo máximo de 48 horas úteis, através dos meios de contato supramencionados. QUALQUER INTERVENÇÃO
+        REALIZADA NO VEÍCULO SEM A PRÉVIA AUTORIZAÇÃO DA NOBRE AUTOMOTIVE NÃO SERÁ REEMBOLSADA EM HIPÓTESE
+        ALGUMA. As despesas com transporte/remoção do veículo ficarão exclusivamente às expensas do
+      proprietário/cliente. A execução de serviços ou substituição de peças sem a devida autorização da NOBRE
+      AUTOMOTIVE, acarreta a rescisão do presente Termo de Garantia Estendida.<span> A NOBRE MANTERÁ A
+          GARANTIA, CASO AS REVISÕES PRÉVIAS SEJAM EXECUTADAS DENTRO DO PRAZO ESTIPULADO E DENTRO DA NOBRE AUTOMOTIVE OU
+          EM SUA PARCEIRA PRÉ AUTORIZADA PELA NOBRE, PREFERENCIALMENTE BOSCH CAR SERVICE.</u></span></strong></p>
+  </div>
+
+  <div class="section">
+    <h2>2 - Vigência</h2>
+    <p>
+      <strong>A NOBRE AUTOMOTIVE</strong> prestará serviços de garantia ao veículo supramencionado por 9 (nove)
+      meses
+      contados a partir de 90 (noventa) dias da data de compra do veículo junto a <strong>{{razaoSocial}}</strong>,
+      concomitante a assinatura do presente Termo, finalizando em <strong>{{dataGarantia}}</strong>, atuando com
+      autonomia, liberdade de horário e inexistindo qualquer subordinação técnica e/ou jurídica.
+    </p>
+    <p>
+      Para os serviços prestados pela empresa <strong>Care Assistência 24H Ltda</strong> conforme item 4 adiante, fica
+      estabelecido o prazo de 12 meses finalizando o mesmo <strong>{{dataAssistencia}}</strong>, passível de
+      alteração.
+    </p>
+  </div>
+
+  <h2>3 - Serviços e Itens Cobertos pela Garantia</h2>
+  <div class="section">
+    <p>Estarão cobertos por este Termo de Garantia Estendida, pelo prazo de 9 (nove) meses, (excluindo-se deste
+      prazo o suporte da Assistencia 24hs) os seguintes itens :</p>
+    <p><strong>3.1 - PLANO NOBRE BRONZE (MOTOR E CÂMBIO)</strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>3.1.1 MOTOR (GASOLINA, FLEX, ETANOL E DIESEL)</strong>: cabeçote, virabrequim, virabrequim, pistões,
+        bielas, anéis dos pistões, bronzinas da biela, bronzinas do mancal, hastes e balancins, eixo de comando das
+        válvulas, válvulas de admissão, válvulas de escape e guias de válvulas, tuchos hidráulicos e mecânicos e bomba
+        de óleo.</p>
+      <p><strong>3.1.2 CÂMBIO CVT:</strong> polias variáveis e conversor de torque.</p>
+      </p>
+      <p><strong>3.1.3 CÂMBIOS ROBOTIZADOS (DUALOGIC, I-MOTION, EASYTRONIC, DSG, POWERSHIFT):</strong> Robô, bomba de
+        pressão e acumulador de pressão.
+      </p>
+      <p><strong>3.1.4 CÂMBIO MANUAL (COMPONENTES):</strong> engrenagens helicoidais, eixos, garfos, rolamentos do
+        câmbio e cubo sincronizador.
+      </p>
+      <p>
+        <strong>3.1.5 CÂMBIO AUTOMÁTICO (COMPONENTES):</strong> conversor de torque, planetárias, corpo de válvulas,
+        eixos, rolamentos, engrenagens helicoidais e bomba de óleo (exclusas cintas dos freios e disco de composite ou
+        embreagem).
+      </p>
+      <p>
+        <strong>3.1.6 SISTEMA DE ARREFECIMENTO: </strong> bomba d’água mecânica e válvula termostática.
+      </p>
+      <p>
+        <strong>3.1.7 MÃO DE OBRA: </strong> Isenta de qualquer valor nos itens de garantia estendida. Caso necessário,
+        a mão de obra será aplicada dentro das políticas acordadas pelas oficinas credenciadas Bosch Car Service e a
+        Nobre Automotive.
+        Ocorre a exclusão dos custos de mão de obra correspondentes ao diagnóstico, custos pela pesquisa do
+        defeito/avaria e pela substituição de peças efetuadas em particular sem que existam falhas ou defeitos somente
+        por um procedimento usual e correto (troca de peças para teste).
+        Todos os <strong>serviços terceirizados estão exclusos</strong> da garantia estendida, assim como, serviços que
+        não dependam
+        exclusivamente de mão de obra e sim, dependam de equipamentos específicos como: diagnóstico computadorizado
+        (scanner), sistema de calibração radar/ADAS, Sistema de TPMS (pressão de pneus), alinhamento/balanceamento,
+        retíficas em geral, soldas em geral, etc, mesmo no período de garantia legal (primeiros 90 dias).
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>3.2 - PLANO NOBRE PRATA</strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>3.2.1 MOTOR (GASOLINA, FLEX, ETANOL E DIESEL):</strong>: cabeçote, virabrequim virabrequim, pistões,
+        bielas, anéis dos pistões, bronzinas da biela, bronzinas do mancal, hastes e balancins, eixo de comando das
+        válvulas, válvulas de admissão, válvulas de escape e guias de válvulas, tuchos hidráulicos e mecânicos, bomba de
+        óleo, corrente de distribuição, polias e radiador de óleo do motor.
+      </p>
+      <p><strong>3.2.2 CÂMBIO CVT:</strong> polias variáveis e conversor de torque.</p>
+      <p><strong>3.2.3 CÂMBIOS ROBOTIZADOS (DUALOGIC, I-MOTION, EASYTRONIC, DSG, POWERSHIFT):</strong> robô, bomba de
+        pressão e acumulador de pressão.
+      </p>
+      <p><strong>3.2.4 CÂMBIO MANUAL (COMPONENTES):</strong> engrenagens helicoidais, eixos, garfos, rolamentos do
+        câmbio e cubo sincronizador.
+      </p>
+      <p>
+        <strong>3.2.5 CÂMBIO AUTOMÁTICO (COMPONENTES):</strong> conversor de torque, planetárias, corpo de válvulas,
+        eixos, rolamentos, engrenagens helicoidais, bomba de óleo, cintas dos freios e discos de composite.
+      </p>
+      <p>
+        <strong>3.2.6 SISTEMA DE ARREFECIMENTO: </strong> bomba d’água mecânica, válvula termostática, radiador e
+        mangueiras de arrefecimento.
+      </p>
+      <p><strong>3.2.7 SISTEMA DE ALIMENTAÇÃO:</strong>bomba de combustível, bomba injetora, debímetro e bomba de alta
+        pressão.
+      </p>
+      <p><strong>3.2.8 SISTEMA DE ADMISSÃO:</strong> turbo compressor a geometria variável e geometria fixa.
+      </p>
+      <p><strong>3.2.9 SISTEMA ELÉTRICO:</strong> motor de partida, alternador, motor limpador de pará-brisa, motor
+        vidros elétricos e eletro ventilador do arrefecimento.
+      </p>
+      <p><strong>3.2.10 SISTEMA ELETRÔNICO:</strong> módulo central do sistema de injeção eletrônica.
+      </p>
+      <p><strong>3.2.11 SISTEMA DE AR CONDICIONADO:</strong> compressor, condensador, evaporador e radiador de ar
+        quente.
+      </p>
+      <p><strong>3.2.12 SISTEMA DE FREIOS:</strong> bomba de freio, servo freio, depressor e unidade eletro hidráulica
+        do ABS.
+      </p>
+      <p><strong>3.2.13 DIFERENCIAL:</strong> pinhão, coroa, satélite e planetário, rolamentos, caixa satélite, flange
+        e
+        semi eixo.
+      </p>
+      <p><strong>3.2.14 SISTEMA DE TRANSMISSÃO:</strong> eixo de transmissão, junta cardan, cruzetas, semi eixo, junta
+        homocinética e caixa de transferência.
+      </p>
+      <p><strong>3.2.15 SISTEMA DE DIREÇÃO:</strong> caixa de direção mecânica, caixa de direção hidráulica, caixa de
+        direção elétrica e bomba de direção.
+      </p>
+      <p><strong>3.2.16 MÃO DE OBRA:</strong> Isenta de qualquer valor nos itens de garantia estendida. Caso necessário,
+        a mão de obra será aplicada dentro das políticas acordadas pelas oficinas credenciadas Bosch Car Service e a
+        Nobre Automotive.
+        Ocorre a exclusão dos custos de mão de obra correspondentes ao diagnóstico, custos pela pesquisa do
+        defeito/avaria e pela substituição de peças efetuadas em particular sem que existam falhas ou defeitos somente
+        por um procedimento usual e correto (troca de peças para teste).
+        Todos os <strong>serviços terceirizados estão exclusos</strong> da garantia estendida, assim como, serviços que
+        não dependam
+        exclusivamente de mão de obra e sim, dependam de equipamentos específicos como: diagnóstico computadorizado
+        (scanner), sistema de calibração radar/ADAS, Sistema de TPMS (pressão de pneus), alinhamento/balanceamento,
+        retíficas em geral, soldas em geral, etc, mesmo no período de garantia legal (primeiros 90 dias).</p>
+    </div>
+  </div>
+  <div class="section">
+    <p><strong>3.3 - PLANO NOBRE OURO</strong></p>
+    <div class="subtexto-recuado">
+      <p><strong>3.3.1 MOTOR (GASOLINA, FLEX, ETANOL, E DIESEL):</strong> cabeçote, virabrequim, pistões,
+        bielas, anéis dos pistões, bronzinas da biela, bronzinas do mancal, hastes e balancins, eixo de comando das
+        válvulas, válvulas de admissão, válvulas de escape e guias de válvulas, tuchos hidráulicos e mecânicos, bomba de
+        óleo, corrente de distribuição, polias, radiador de óleo do motor, cárter do motor, bloco do motor, vazamento de
+        óleo do motor, tensor da corrente, tampa de válvulas e volante do motor bi-massa.</p>
+
+      <p><strong>3.3.2 CÂMBIO CVT:</strong> polias variáveis e conversor de torque.</p>
+
+      <p><strong>3.3.3 CÂMBIOS ROBOTIZADOS (Dualogic, I-motion, Easytronic, DSG, Powershift):</strong> robô, bomba de
+        pressão e acumulador de pressão.</p>
+
+      <p><strong>3.3.4 CÂMBIO MANUAL (COMPONENTES):</strong> engrenagens helicoidais, eixos, garfos, rolamentos do
+        câmbio e cubo sincronizador.</p>
+
+      <p><strong>3.3.5 CÂMBIO AUTOMÁTICO (COMPONENTES):</strong> conversor de torque, planetárias, corpo de válvulas,
+        eixos, rolamentos, engrenagens helicoidais, bomba de óleo, cintas dos freios, discos de composite e central
+        mecatrônica.</p>
+
+      <p><strong>3.3.6 SISTEMA DE ARREFECIMENTO:</strong> bomba d’água mecânica, válvula termostática, radiador,
+        mangueiras de arrefecimento, bomba de água auxiliar e carcaça da válvula termostática.</p>
+
+      <p><strong>3.3.7 SISTEMA DE ALIMENTAÇÃO:</strong> bomba de combustível, bomba injetora, debímetro, bomba de alta
+        pressão, válvula EGR, bicos injetores e tubo de distribuição combustível (flauta).</p>
+
+      <p><strong>3.3.8 SISTEMA DE ADMISSÃO:</strong> turbo compressor a geometria variável, geometria fixa, válvula
+        wastegate e atuador eletrônico.</p>
+
+      <p><strong>3.3.9 SISTEMA ELÉTRICO:</strong> motor de partida, alternador, motor limpador de para-brisa, motor
+        vidros elétricos, eletro ventilador do arrefecimento, motor retrovisor e body computer.</p>
+
+      <p><strong>3.3.10 SISTEMA ELETRÔNICO:</strong> módulo central do sistema de injeção eletrônica, módulo de air bag
+        e módulo de ignição.</p>
+
+      <p><strong>3.3.11 SISTEMA DE AR CONDICIONADO:</strong> compressor, condensador, evaporador, radiador de ar quente,
+        ventilador e válvula de expansão.</p>
+
+      <p><strong>3.3.12 SISTEMA DE FREIOS:</strong> bomba de freio, servo freio, depressor, unidade eletro hidráulica do
+        ABS, válvula reguladora pressão e tubo hidráulico.</p>
+
+      <p><strong>3.3.13 DIFERENCIAL:</strong> pinhão, coroa, satélite e planetário, rolamentos, caixa satélite, flange e
+        semi eixo.</p>
+
+      <p><strong>3.3.14 SISTEMA DE TRANSMISSÃO:</strong> eixo de transmissão, junta cardan, cruzetas, semi eixo, junta
+        homocinética, caixa de transferência, unidade hidráulica ASR, rolamento de roda e suporte central eixo cardan.
+      </p>
+
+      <p><strong>3.3.15 SISTEMA DE DIREÇÃO:</strong> caixa de direção mecânica, caixa de direção hidráulica, caixa de
+        direção elétrica, bomba de direção e EPS (Electric Power Steering).</p>
+
+      <p><strong>3.3.16 SISTEMA DE EXAUSTÃO:</strong> Coletor de escape, sonda lambda e catalisador.</p>
+
+      <p><strong>3.3.17 MÃO DE OBRA:</strong> Isenta de qualquer valor nos itens de garantia estendida. Caso necessário,
+        a mão de obra será aplicada dentro das políticas acordadas pelas oficinas credenciadas Bosch Car Service e a
+        Nobre Automotive.
+        Ocorre a exclusão dos custos de mão de obra correspondentes ao diagnóstico, custos pela pesquisa do
+        defeito/avaria e pela substituição de peças efetuadas em particular sem que existam falhas ou defeitos somente
+        por um procedimento usual e correto (troca de peças para teste).
+        Todos os <strong>serviços terceirizados estão exclusos</strong> da garantia estendida, assim como, serviços que
+        não dependam
+        exclusivamente de mão de obra e sim, dependam de equipamentos específicos como: diagnóstico computadorizado
+        (scanner), sistema de calibração radar/ADAS, Sistema de TPMS (pressão de pneus), alinhamento/balanceamento,
+        retíficas em geral, soldas em geral, etc, mesmo no período de garantia legal (primeiros 90 dias).</p>
+    </div>
+  </div>
+
+  <h2>4 - Termos e Benefícios de Utilização da Assistência 24h</h2>
+  <div class="section">
+    <div class="subtexto-recuado">
+      <p><strong>4.1 O CONTRATANTE</strong> terá total assistência mediante os prazos e requisitos determinado nos
+        termos deste contrato, a disponibilidade de atendimento 24 horas por dia, 7 dias por semana (incluindo finais de
+        semana e feriados), para realizar a solicitação de serviços através dos meios de contato fornecidos pela
+        <strong>CARE
+          ASSISTÊNCIA 24 HORAS LTDA</strong> nos canais de atendimento via telefone <strong>(0800 940 2121 ou 0800 940
+          2122)</strong>
+          <br></br>
+        Disponibilizando a utilização dos serviços cobertos com 3 utilizações anuais com o <strong>prazo máximo de
+          365 (trezentos
+          e sessenta e cinco) dias corridos a partir da data de contratação</strong> podendo ter a diminuição do prazo
+        total caso o
+        CONTRATANTE viole os termos descritos no parágrafo 4.1.1 do contrato vigente.
+      </p>
+      <p><strong>4.1.1 O CONTRATANTE </strong>não terá direito a utilização, cobertura e benefícios fornecidos pela
+        assistência referenciada caso descumpra os requisitos de adesão do plano de garantia estendida descritos na
+        cláusula 5 - (CASOS DE EXCLUSÃO DE GARANTIA) contida neste contrato. No caso de descumprimento do termo, o
+        beneficiário será desativado da plataforma sem qualquer aviso prévio não podendo utilizar os serviços descritos
+        na cláusula 4 - (TERMOS E BENEFÍCIOS DE UTILIZAÇÃO DA ASSISTÊNCIA 24h) contida neste contrato.
+      </p>
+      </p>
+      <p><strong>4.1.2 O BENEFCIÁRIO</strong> terá direito a os seguintes serviços: <strong>socorro elétrico mecânico,
+          reboque após pane ou sinistro, chaveiro, táxi e troca de pneus.</strong>
+        Para o acionamento de quaisquer serviços, os pré-requisitos determinados pela CENTRAL DA ASSISTÊNCIA 24hs
+        são:<br>
+        <strong>A)</strong> Antes de entrar em contato com a <strong>Central da Assistência 24hs</strong>, verifique o
+        endereço onde o veículo e os
+        ocupantes se encontram, bem como os possíveis pontos de referência, isto tornará mais ágil sua localização;<br>
+        <strong>B)</strong> O veículo deve estar desimpedido para realização da remoção e, em caso de acidente (s) com
+        vítimas, em
+        atendimento às exigências da legislação brasileira, a remoção só poderá ser realizada após liberação pelas
+        autoridades competentes;<br>
+        <strong>C)</strong> Todo e qualquer serviço de assistência <strong>NÃO</strong> deverá ser
+        acionado/providenciado sem a prévia autorização da
+        <strong>CENTRAL DA ASSISTÊNCIA 24hs</strong> ou da <strong>NOBRE AUTOMOTIVE</strong>;<br>
+        <strong>D)</strong> Os serviços solicitados sem autorização prévia da Assistência 24 horas não possuem garantia
+        de reembolso por
+        parte da <strong>CENTRAL DA ASSISTÊNCIA 24hs</strong> ou por parte da <strong>NOBRE AUTOMOTIVE</strong>;<br>
+
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>4.2 - GARANTIA E LIMITES:</strong></p>
+    <div class="subtexto-recuado">
+      <p>A Central de Assistência, sempre que possível, buscará solucionar o problema do usuário/ solicitante, enviando
+        equipes de profissionais para a assistência emergencial, disponibilizando equipamentos e outros serviços,
+        conforme a cobertura. O critério de limitação ou exclusão do direito ao uso do (s) serviço (s) será de acordo
+        com a quilometragem, tempo/ quantidade máxima de utilização dos serviços ou valor máximo previstos na cobertura
+        contratada pelo usuário/solicitante.
+
+      </p>
+      <p><strong>4.2.1 SOCORRO ELÉTRICO/MECÂNICO:</strong> A Assistência 24hs providenciará o envio de socorro
+        elétrico/mecânico ao veículo, em atendimento a situação de caráter emergencial, considerando que o reparo seja
+        tecnicamente possível de realização no local do evento, de natureza paliativa. <strong><span><u>Caso o reparo
+              não seja possível
+              ou a pane não tenha motivo aparente que permita direcionar o socorro adequado, é garantido o serviço de
+              reboque,
+              para que o veículo seja levado à oficina mais próxima e/ou a outro local de solicitação do usuário/
+              solicitante,
+              desde que não ultrapasse o limite de quilometragem contratada de 100 kms totais ou seja, 50 (cinquenta)
+              quilômetros de ida e 50 (cinquenta) quilômetros de volta do local do evento, totalizando 100 kms
+              totais.</u></span></strong>
+      </p>
+      <p><strong>IMPORTANTE 1:</strong> O usuário/solicitante se responsabilizará pela remoção de eventual carga
+        transportada no veículo antes da efetivação do reboque.
+      </p>
+      <p><strong>IMPORTANTE 2: </strong> Não estão previstos os custos com equipamentos especiais (munk, guindastes,
+        carro de apoio, etc.) para resgates em que o uso exclusivo do reboque não seja suficiente tecnicamente para
+        executar a remoção.
+      </p>
+      <p>
+        <strong>IMPORTANTE 3:</strong> A Central de Assistência arcará com os custos de mão de obra do referido socorro
+        elétrico/mecânico, desde que seja possível sua execução no local do evento.
+      </p>
+      <p>
+        <strong>IMPORTANTE: 4:</strong> Estão excluídas quaisquer despesas com compra ou substituição de peças e com mão
+        de obra cobrada para serviços relativos ao evento, porém, executados em outro local.
+      </p>
+      <p><strong>IMPORTANTE 5:</strong> O envio de mecânico será possível em dia útil durante o horário comercial.
+      </p>
+      <p><strong>LIMITES:</strong>03 (três) utilizações ao ano.
+      </p>
+      <p><strong>4.2.2 REBOQUE DO VEÍCULO APÓS PANE ELÉTRICA/MECÂNICA ou SINISTRO:</strong> Na ocorrência de pane
+        elétrica/mecânica, acidente, incêndio, roubo/furto localizado, que impossibilite o deslocamento por seus
+        próprios meios em consequência do evento descrito, e que o reparo não seja possível no local, a Central de
+        Assistência fornecerá ao usuário/ solicitante o serviço de reboque para que o veículo seja levado até a oficina
+        mais próxima indicada, desde que não ultrapasse o limite de quilometragem contratada.
+      </p>
+      <p><strong>IMPORTANTE 1:</strong> O usuário/solicitante responsabilizar-se-á pela remoção de eventual carga
+        transportada no veículo antes do envio do reboque.
+      </p>
+      <p><strong>IMPORTANTE 2:</strong> São estão previstos os custos com equipamentos especiais (munk, guindastes, carro
+        de apoio etc.) para resgates em que o uso exclusivo do reboque não seja suficiente tecnicamente para executar a
+        remoção.
+      </p>
+      <p>
+        <strong>IMPORTANTE 3:</strong> Será disponibilizado somente 01 (um) reboque por evento de pane. Caso o evento
+        ocorra fora do horário comercial, o veículo será encaminhado para residência do usuário/solicitante ou para a
+        base do prestador de serviço. O usuário/solicitante terá prazo de 48 horas úteis para solicitar a segunda
+        remoção para oficina, contados a partir do primeiro acionamento, respeitando o limite de quilometragem
+        contratada.
+      </p>
+      <p>
+        <strong>IMPORTANTE 4:</strong><strong><span> <u>Nos casos em que o percurso solicitado ultrapasse a quilometragem contratada, os
+              custos com a quilometragem excedente são de responsabilidade do usuário/ solicitante.</u></span></strong>
+      </p>
+      <p><strong>IMPORTANTE 5:</strong> A permanência do veículo na base do prestador de serviço pode estar sujeita a
+        cobrança não coberta junto a Assistência 24 horas ultrapassado os prazos estabelecidos.
+      </p>
+      <p><strong>IMPORTANTE 6:</strong> Os procedimentos administrativos necessários em função do sinistro devem ser
+        verificados diretamente junto a área administrativa responsável pelo cadastro do veículo.
+      </p>
+      <p><strong>LIMITES:</strong>03 (três) utilizações ao ano.
+      </p>
+      <p><strong>4.2.3 TROCA DE PNEUS:</strong></p>
+      <p>Na hipótese de ocorrerem dano (s) ao (s) pneus (s), que impossibilitem a locomoção do veículo por seus
+        próprios
+        meios, a Central de Assistência disponibilizará profissional para efetuar a troca do pneu danificado pelo
+        estepe
+        do veículo. Este serviço poderá ser feito caso o usuário/solicitante disponha das ferramentas de chaves de
+        roda
+        e macaco. Na inviabilidade de realizar o serviço no local, fica garantido o reboque para que o veículo seja
+        levado à borracharia mais próxima, limitado ao raio total de 100 (cem) quilômetros totais ou seja, 50
+        (cinquenta) quilômetros de ida e 50 (cinquenta) quilômetros de volta do local do evento, totalizando 100kms
+        totais.
+      </p>
+      <p><strong>IMPORTANTE 1:</strong> Todas as despesas para o conserto do pneumático: mão de obra, pneus, câmara,
+        bicos, etc., serão de responsabilidade do usuário/solicitante.
+      </p>
+      <p><strong>LIMITES:</strong>03 (três) utilizações ao ano.
+      </p>
+      <p><strong>4.2.4 TÁXI:</strong></p>
+      <p>Em caso de acidente, incêndio, furto/roubo e pane do veículo, em evento previamente atendido pela Central de
+        Assistência, limitado a um raio de 40 km do local do evento, será providenciado um táxi até o endereço indicado
+        pelo usuário/solicitante.
+      </p>
+      <p><strong>IMPORTANTE 1:</strong> Quando o veículo do usuário/solicitante for destinado a transporte de
+        passageiros (táxi, van e assemelhados), será disponibilizado socorro somente para o motorista do veículo.
+      </p>
+      <p><strong>LIMITES:</strong> Até R$ 70,00 (setenta reais) por evento, independentemente do número de passageiros
+        permitidos pela lotação do veículo definida pelo fabricante e de seus destinos.
+      <p><strong>LIMITES:</strong> 03 (três) utilizações ao ano.
+
+      <p><strong>4.2.5 CHAVEIRO:</strong> 
+        <br>
+        Em caso de perda, roubo, furto, quebra da chave nas fechaduras, bem como
+        fechamento das mesmas no interior do veículo, e o mesmo não puder ser acionado ou o usuário/ solicitante não
+        puder entrar no veículo, a Central de Assistência enviará um chaveiro para que, sempre que tecnicamente
+        possível, seja realizada a abertura da porta.
+      </p>
+      <p><strong>IMPORTANTE 1:</strong> Caso não seja possível resolver o problema por meio do envio do chaveiro, fica
+        garantido o reboque do veículo para o local apropriado para execução do serviço, a escolha do
+        usuário/solicitante, limitado ao raio total de 100 (cem) quilômetros totais, ou seja, 50 (cinquenta) quilômetros
+        de ida e 50 (cinquenta) quilômetros de volta do local do evento, totalizando 100kms totais.
+      </p>
+      <p><strong>IMPORTANTE 2:</strong> Não estão abrangidos os custos de mão-de-obra e peças para confecção de chaves,
+        troca e conserto de fechaduras, miolo e ignição que se encontrem danificados.
+      </p>
+      <p>
+        <strong>IMPORTANTE 3:</strong> Este SERVIÇO somente será disponibilizado para VEÍCULOS que utilizem sistemas de
+        fechaduras e chaves tradicionais, ou seja, sem códigos eletrônicos e necessidade de equipamentos especiais.
+      </p>
+      <p><strong>IMPORTANTE 4:</strong> Para sistemas de chaves cuja informação seja restrita à concessionária ou
+        montadora, fica garantida a remoção ao local especializado verificado pelo usuário/solicitante, limitado ao raio
+        total de 100 (cem) quilômetros totais, ou seja, 50 (cinquenta) quilômetros de ida e 50 (cinquenta) quilômetros
+        de volta do local do evento, totalizando 100 kms totais.
+      </p>
+      <p><strong>LIMITE:</strong> 03 (três) utilizações ao ano, valor de R$100,00 por evento.
+      </p>
+      <p><strong>4.2.6 - CARRO RESERVA:</strong>
+        <br>
+        Será disponibilizado ao cliente a possibilidade de locação de carro
+        reserva, a partir do 10 (décimo) dia útil após dada a entrada do veículo na oficina. A solicitação deve ser
+        feita junto a Nobre Automotive que fará toda a intermediação com a Locadora.
+        O benefício do <strong>Carro Reserva</strong> deverá respeitar todas as regulamentações e normas exigidas pela
+        Locadora no
+        momento da assinatura do contrato para retirada do veículo, dentre eles, um cartão de crédito em nome do
+        condutor/proprietário com limite disponível de no mínimo R$ 2.500,00, podendo o valor ser alterado pela Locadora
+        sem aviso prévio. A retirada do veículo será realizada na própria locadora, na loja mais próxima e/ou com
+        veículo disponível e o ressarcimento será realizado pela Nobre após a entrega do veículo</p>
+
+
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>4.3 EXCLUSÕES:</strong></p>
+    <div class="subtexto-recuado">
+      <p>Estão excluídas as prestações de serviços da <strong>CENTRAL DA ASSISTÊNCIA 24hs</strong> a eventos resultantes de:
+      </p>
+      <p><strong>4.3.1 DE CARÁTER GERAL:</strong><br> • Prestações de serviços não decorrentes das instruções e
+        solicitações contratadas, ou que tenham sido solicitadas diretamente ou indiretamente pelo usuário/solicitante
+        como antecipação, extensão ou realização do serviço;<br> • Fenômeno da natureza de caráter extraordinário,
+        tais como: inundações, terremotos, erupções vulcânicas, furacões, maremotos e queda de meteoritos;
+        <br> • Explosão, liberação de calor e irradiações proveniente de cisão de átomos ou radioatividade e ainda os
+        decorrentes de radiações
+        provocadas pela aceleração artificial de partículas; <br> • Ocorrências em situações de guerra, comoções
+        sociais, atos de terrorismo e sabotagem, greves, decretação de estado de calamidade pública, detenção por parte
+        de autoridade em decorrência de delito que não seja um acidente, salvo se o usuário/ solicitante provar que a
+        ocorrência não tem relação com os referidos eventos;<br> • Atos ou atividades das Forças Armadas ou Forças de
+        Segurança em tempos de Guerra.
+      </p>
+      <p><strong>4.3.2 EM RELAÇÃO AO VEÍCULO:</strong><br> • Ocorrências fora dos âmbitos definidos;<br>
+        • Acidentes com a motocicleta em decorrência da prática de “rachas” ou corridas;<br>
+        • Má manutenção ou descuidos do responsável do automóvel;<br>
+        • Veículos em desrespeito às normas de segurança recomendadas pelo fabricante ou autoridades;<br>
+        • Participação em apostas, duelos, crimes e disputas;<br>
+        • Acidentes produzidos por ingestão intencional de tóxicos, narcóticos ou bebidas alcoólicas;<br>
+        • Ação ou omissão do usuário/solicitante causada por má fé;<br>
+        • Solicitação de Assistência para panes repetitivas;<br>
+        • Eventuais reboques de veículos que exijam utilização de “munk” ou outro equipamento para fins de resgate que
+        não o tradicional “reboque”;<br>
+        • Gastos com combustíveis, reparações e roubo de acessórios incorporados ao veículo;<br>
+        • Uso indevido do veículo ou condução do mesmo por pessoa não habilitada;<br>
+        • Roubo das bagagens e objetos pessoais deixados no interior do veículo;<br>
+        • Reparo do veículo fora do local do evento;<br>
+        • Conserto do veículo;<br>
+        • Evento ocorrido fora de estradas, ruas e rodovias estranhas ao sistema viário, implicando equipamento de
+        socorro fora do padrão normal;<br>
+        • Envolvimento de terceiros em acidentes, mesmo que o usuário/solicitante reconheça sua responsabilidade;<br>
+        • Acionamento dos serviços de emergência em sequência a chamada para correção de defeito ou vício também
+        conhecida como “recall” por parte da Contratante;<br>
+        • Mercadorias transportadas;<br>
+        • Assistências efetuadas ou solicitadas diretamente pelo usuário/solicitante, sem prévia autorização da
+        Contratada;<br>
+        • No serviço de motorista substituto, não estão inclusas despesas com combustível, pedágio e gastos pessoais do
+        motorista.<br>
+      </p>
+      <p><strong>IMPORTANTE 2: </strong> Não estão previstos os custos com equipamentos especiais (munk, guindastes,
+        carro de apoio, etc.) para resgates em que o uso exclusivo do reboque não seja suficiente tecnicamente para
+        executar a remoção.
+      </p>
+      <p><strong>4.3.3 EM RELAÇÃO ÀS PESSOAS:</strong><br>
+        • Ocorrências fora dos âmbitos definidos;<br>
+        • Acidentes com a motocicleta em decorrência da prática de “rachas” ou corridas;<br>
+        • Má manutenção ou descuidos do responsável do automóvel;<br>
+        • Veículos em desrespeito às normas de segurança recomendadas pelo fabricante ou autoridades;<br>
+        • Participação em apostas, duelos, crimes e disputas;<br>
+        • Acidentes produzidos por ingestão intencional de tóxicos, narcóticos ou bebidas alcoólicas;<br>
+        • Ação ou omissão do usuário/solicitante causada por má fé;<br>
+        • Solicitação de Assistência para panes repetitivas;<br>
+        • Eventuais reboques de veículos que exijam utilização de “munk” ou outro equipamento para fins de resgate que
+        não o tradicional “reboque”;<br>
+        • Gastos com combustíveis, reparações e roubo de acessórios incorporados ao veículo;<br>
+        • Uso indevido do veículo ou condução do mesmo por pessoa não habilitada;<br>
+        • Roubo das bagagens e objetos pessoais deixados no interior do veículo;<br>
+        • Reparo do veículo fora do local do evento;<br>
+        • Conserto do veículo;<br>
+        • Evento ocorrido fora de estradas, ruas e rodovias estranhas ao sistema viário, implicando equipamento de
+        socorro fora do padrão normal;<br>
+        • Envolvimento de terceiros em acidentes, mesmo que o usuário/solicitante reconheça sua responsabilidade;<br>
+        • Acionamento dos serviços de emergência em sequência a chamada para correção de defeito ou vício também
+        conhecida como “recall” por parte da Contratante;<br>
+        • Mercadorias transportadas;<br>
+        • Assistências efetuadas ou solicitadas diretamente pelo usuário/solicitante, sem prévia autorização da
+        Contratada;<br>
+        • No serviço de motorista substituto, não estão inclusas despesas com combustível, pedágio e gastos pessoais do
+        motorista.<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5 - CASOS DE EXCLUSÃO DE GARANTIA</h2>
+    <div class="subtexto-recuado">
+      <p>
+        <strong>5.1 –</strong> A substituição/execução de peças e serviços não autorizados pela <strong>NOBRE
+          AUTOMOTIVE;</strong><br>
+        <strong>5.2 –</strong> Utilização do veículo em situações atípicas, quais sejam:<br>
+        <strong>5.2.1 –</strong> Veículos que tenham modificadas e/ou alteradas as características determinadas pelo
+        fabricante;<br>
+        <strong>5.2.2 –</strong> Inexistência de manutenções preventivas exigidas pelo fabricante;<br>
+        <strong>5.2.3 –</strong> Condução do veículo de forma não convencional, tais como: competições ou corridas
+        automotivas; utilização em autoescolas; transporte público ou coletivo; uso por meio de aplicativos de
+        transporte;
+        locação do veículo; uso em rodovias não apropriadas, sem pavimentação ou com pavimentação ineficiente; demais
+        serviços de transporte de pessoas ou cargas; uso comercial (vendedor/representante), entre outros que não sejam
+        adequados ao seu perfeito funcionamento.<br>
+        <strong>5.3 –</strong> Problemas/avarias ocasionados por desgaste natural em relação ao uso e estado de
+        conservação
+        do veículo;<br>
+        <strong>5.3.1 –</strong> Estão excluídos todos os itens e peças cujo problema é considerado pelo fabricante,
+        decorrente de desgaste natural e que devem ser substituídos periodicamente: anéis sincronizadores, disco e
+        pastilha de freios, velas, cabo de vela, bobina de ignição, vela aquecedora, kit da embreagem (platô, disco,
+        rolamento e atuadores da embreagem), volante do motor, sensores em geral, retentores do motor, anéis de vedação,
+        correia dentada, tensor da correia, correias de acessórios, rolamentos do motor, coifas (guarda pó), molas,
+        amortecedores, batentes, terminais de direção, pivô de suspensão, bieletas da barra estabilizadora, barra axial
+        da
+        direção, coxim motor/câmbio, mangueiras em geral (exceto sistema de arrefecimento), corpo borboleta, válvula
+        VVT,
+        atuadores em geral, pescador de óleo, chave seletora da marcha, trizetas, tulipa, retentores em geral (câmbio,
+        caixa de transferência, diferencial e motor), coluna de direção e buchas em geral. <strong><span><u>Assim como
+              qualquer coisa não
+              expressamente mencionadas no item 5 deste termo de garantia.</u></span></strong><br>
+        <strong>5.4 –</strong> Problemas/avarias ocasionados por fenômenos naturais, tais como: enchentes, terremotos,
+        maremotos, erupções vulcânicas, inundações, entre outros;<br>
+        <strong>5.5 –</strong> Formação de borra no óleo do motor e/ou deterioração do fluido lubrificante;<br>
+        <strong>5.6 –</strong> Negligência/imprudência na utilização do veículo;<br>
+        <strong>5.7 –</strong> Problemas/avarias ocasionadas por reparos não realizados em conformidade com o presente
+        Termo de Garantia, bem como serviços e/ou substituição de peças não realizados pela <strong>NOBRE
+          AUTOMOTIVE;</strong><br>
+        <strong>5.8 –</strong> Problemas/avarias/fraude no hodômetro do veículo;<br>
+        <strong>5.9 –</strong> Em caso de incêndio, colisão, furto do veículo, mesmo que seja recuperado em alguma
+        dessas
+        situações;<br>
+        <strong>5.10 –</strong> Fazem parte de exclusão todos os materiais de consumo, tais como: óleos lubrificantes,
+        líquidos de arrefecimento, filtros, bateria, guarnições, anéis, parafusos, lâmpadas, todos itens em plástico e
+        borracha, alarme antifurto, conversão para gás, airbag e sistema de navegador (GPS). Serão ainda excluídos
+        quaisquer tipos de perdas de líquidos (óleo, água entre outros), ruídos diversos e desgastes originários de
+        peças
+        de reposição além dos custos pelos diagnósticos e procura de defeitos/avarias;<br>
+        <strong>5.11 –</strong> Os serviços de regulagem de motor e de limpeza nos sistemas de alimentação e
+        refrigeração;<br>
+        <strong>5.12 –</strong> Vazamento de óleo do câmbio, redução gradual ou falta de compressão do motor e aumento
+        gradual do consumo de óleo. Calço hidráulico ocasionado por entrada de água, acúmulo de óleo e/ou combustível no
+        interior da câmara de combustão;<br>
+        <strong>5.13 – <u>Quaisquer itens não mencionados no item 03 (três).</u></strong><br>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>6 - ROTINA DE EXECUÇÃO</h2>
+      <p>As rotinas de execução dos serviços objeto deste Termo de Garantia Estendida serão realizadas
+        pela <strong>NOBRE AUTOMOTIVE</strong> mediante solicitação do <strong>PROPRIETÁRIO</strong> do veículo, por
+        meio de comunicação prévia, nas seguintes condições:</p>
+
+      <p><strong>Parágrafo Primeiro:</strong> Após avaliação prévia e consequente realização dos reparos relacionados
+        aos tópicos constantes do item terceiro, será encaminhado um relatório de execução de serviços ao
+        <strong>PROPRIETÁRIO</strong>, evidenciando os serviços realizados, bem como o tempo necessário na realização
+        dos serviços.
+      </p>
+
+      <p><strong>Parágrafo Segundo:</strong> Os veículos analisados/revisados, que porventura sejam consertados pela
+        <strong>NOBRE AUTOMOTIVE</strong>, serão encaminhados ao <strong>PROPRIETÁRIO</strong> com selo de revisão.
+      </p>
+
+      <p><strong><u>Parágrafo Terceiro:</strong> A empresa não fornecerá o empréstimo de veículos caso o mesmo fique
+        retido
+        na empresa para revisões ou manutenções periódicas ou com gastos com transportes de deslocamento seja do carro,
+        motorista ou passageiros.</u></p>
+
+      <p><strong>Parágrafo Quarto:</strong> As peças a serem utilizadas pela <strong>NOBRE AUTOMOTIVE</strong> na
+        garantia, podem ser de fabricação paralela ou seminova, cabendo a mesma a decisão a qual será utilizada,
+        mantendo o prazo de garantia estabelecido em contrato. Caso o serviço seja numa oficina indicada, o envio da
+        peça é de responsabilidade da mesma, caso haja diferenciação do orçamento da indicada na aquisição da peça em
+        relação à fornecida pela <strong>NOBRE AUTOMOTIVE</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>7 - VALOR DO SERVIÇO</h2>
+      <p>A contratação da garantia estendida pelo prazo de 9 (nove) meses (acrescida aos 90 dias da garantia
+        legal) será
+        oferecida ao <strong>PROPRIETÁRIO</strong> do veículo, desde que cumpridas as exigências integrais do presente
+        Termo de Garantia,
+        restando às expensas do <strong>PROPRIETÁRIO</strong> todas as manutenções/revisões e reparos que não fazem
+        parte do presente
+        termo.</p>
+      <p><u><span>Parágrafo Único: O valor máximo de reparação relacionado a avarias que estejam condicionadas à presente
+          garantia não pode superar as versões contratadas:
+      </p>
+      <p><strong>VALOR MÁXIMO DE REPARO: R$ {{vmr1}}</strong>
+      </p>
+      <p>
+        OBSERVAÇÃO: Caso o valor supere o estipulado V.M.R (Valor Máximo de Reparo) a diferença será cobrada do
+        PROPRIETÁRIO
+        do veículo, com autorização prévia do serviço, reforçando que os valores são o total e não por serviço
+        executado, onde cada conserto abate do valor estipulado dentro do prazo de vigência do contrato, caso o mesmo se
+        alcance o contrato se dá por encerrado, mantendo somente a garantia do serviço pontual prestado.
+      </span></u>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>8 - MANUTENÇÃO / REVISÃO PROGRAMADA</h2>
+      <p><strong>As condições do presente Termo de Garantia Estendida estão condicionadas à execução de todas as
+        manutenções/revisões contidas no manual do fabricante, devendo, no mínimo ser realizada a cada 06 (seis) meses
+        (com tolerância de 1 (hum) mês para mais ou para menos) ou a cada 6.000 (seis mil) quilômetros rodados (com
+        tolerância de 1.000 (hum mil) quilômetro para mais ou para menos), o que ocorrer primeiro. A manutenção/revisão
+        programada será realizada somente pela NOBRE AUTOMOTIVE, ou parceira Bosch Car Service previamente aprovada e
+        mediante agendamento prévio de 48 (quarenta e oito) horas, ficando às expensas do proprietário do veículo todas
+        as despesas com serviços e peças substituídas.</strong>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>9 - CANCELAMENTO OU TRANSFERÊNCIA DA GARANTIA ESTENDIDA</h2>
+      <p><strong>9.1:</strong> O cancelamento da garantia estendida ocorrerá única e exclusivamente nos casos
+        descritos na cláusula 5 (CASOS DE EXCLUSÃO DE GARANTIA) contida neste contrato.
+      </p>
+
+      <p><strong>9.1.2 -</strong> Caso durante a vigência do contrato o veículo coberto pela garantia seja vendido, o
+        proprietário anterior, ou seja, o <strong>CONTRATANTE</strong> no qual foi responsável pela contratação da
+        garantia, deverá informar o fato à <strong>NOBRE AUTOMOTIVE</strong> e enviar os dados necessários para que a
+        transferência da garantia estendida seja realizada.</p>
+
+      <p><strong>9.1.3 -</strong> Em nenhuma outra hipótese será realizado o cancelamento ou transferência da garantia
+        estendida.</p>
+
+      <p><strong>9.1.4 -</strong> A vigência deste contrato refere-se ao veículo com dados determinados na cláusula 1 -
+        (<strong>CONDIÇÕES GERAIS DO SERVIÇO</strong>) contido neste contrato, exonerando a possibilidade de
+        transferência ou utilização da garantia para veículos avulsos.</p>
+      </p>
+    </div>
+
+    <div class="section">
+      <H2>10 - DISPOSIÇÕES GERAIS</H2>
+      <p><strong>O PRESENTE TERMO DE GARANTIA ESTENDIDA</strong> não constitui título executivo extrajudicial, nos
+        termos do artigo 784, do <strong>CÓDIGO DE PROCESSO CIVIL</strong>, sem prejuízo das demais garantias expressas
+        neste <strong>TERMO DE GARANTIA ESTENDIDA</strong>.</p>
+
+      <p><strong>PARÁGRAFO PRIMEIRO:</strong> As partes se comprometem a manter sigilo e confidencialidade, bem como não
+        divulgar e/ou utilizar qualquer informação documental ou verbal prestada por uma parte à outra, direta ou
+        indiretamente, que tenha sido levada ao seu conhecimento neste negócio jurídico, sem prévia e expressa
+        autorização da outra parte.
+      </p>
+
+      <p><strong>PARÁGRAFO SEGUNDO:</strong> As restrições impostas acima não se aplicam à revelação por uma das partes
+        de quaisquer informações de domínio público, sem que tenha havido ato ou omissão da parte, ou que devam ser
+        divulgadas por força de lei. A garantia pode ser substituída por novo proprietário, com aprovação prévia da
+        Nobre, não podendo modificar o veículo. Após ativada a garantia a mesma se encerra somente na data específica do
+        contrato não havendo possibilidade de devolução de qualquer tipo.
+      </p>
+
+      <p><strong>PARÁGRAFO TERCEIRO:</strong> O presente <strong>TERMO DE GARANTIA ESTENDIDA</strong> constitui o acordo
+        integral das partes em relação ao seu objeto e anula todas as declarações, propostas, discussões e comunicações
+        prévias e contemporâneas, sejam verbais ou escritas, e poderá ser modificado somente por escrito, desde que
+        assinado por todas as partes envolvidas.</p>
+    </div>
+
+    <div class="section">
+      <h2> 11 - Foro de Eleição</h2>
+      <p><strong>AS PARTES ELEGEM O FORO DA CIDADE DE PALHOÇA/SC</strong> para dirimir quaisquer litígios decorrentes do
+        presente <strong>TERMO DE GARANTIA ESTENDIDA</strong>, renunciando a qualquer outro, por mais privilegiado que
+        seja.</p>
+
+      <p><strong>ACORDAM AS PARTES</strong> que o presente instrumento será assinado digitalmente, sendo válido para
+        qualquer meio e fim, possuindo 12 páginas devidamente numeradas para os efeitos legais e de direito previstos.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p style="text-align: center;">Florianópolis/SC, {{Data_assinatura}}</p>
+    </div>
+
+    <div class="assinatura">
+      <div>
+        <p>CLIENTE: {{Nome}} <br /> CPF/CNPJ: {{cpfCnpj1}}.</p>
+      </div>
+      <div>
+        <p>NOBRE AUTOMOTIVE<br />CNPJ: 75.830.653/0001-05<br />PIERRE RONAY WILL NOBRE</p>
+      </div>
+      <div>
+        <p>REVENDA:<br />{{razaoSocial1}}<br />CNPJ: {{cnpjRevenda}} </p>
+      </div>
+      <div>
+        <p>TESTEMUNHA:<br />{{nomeConsultor}} <br />CPF:{{cpfConsultor}}</p>
+      </div>
+    </div>
+</body>
+
+</html>
